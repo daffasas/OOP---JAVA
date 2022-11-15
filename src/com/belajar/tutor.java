@@ -1,5 +1,5 @@
 package com.belajar;
-
+//thanks to 'Kelas Terbuka' on YouTube
 
 class Pokedex{
   String pokemon;
@@ -7,16 +7,22 @@ class Pokedex{
   String HP;
   String Mana;
 
-  Pokedex(String inputpokemon, String inputskill, String inputHP, String inputMana){
-      pokemon = inputpokemon;
-      skill = inputskill;
-      HP = inputHP;
-      Mana = inputMana;
+  //belajar constructor
+  Pokedex(String pokemon, String skill, String HP, String Mana){
+      this.pokemon = pokemon;
+      this.skill = skill;
+      this.HP = HP;
+      this.Mana = Mana;
+      
+  }
 
-      System.out.println(pokemon);
-      System.out.println(skill);
-      System.out.println(HP);
-      System.out.println(Mana);
+  //belajar method
+  void show(){
+      System.out.println("Your Pokemon is " + this.pokemon);
+      System.out.println(this.pokemon + "'s skill is " + this.skill);
+      System.out.println("HP : " + this.HP);
+      System.out.println("Mana : " + this.Mana);
+      System.out.println("------------------------------");
 
   }
 }
@@ -27,6 +33,9 @@ public class tutor{
     
     Pokedex Pokedex1 = new Pokedex("Pikachu","Tailwhip","150","300");
     Pokedex Pokedex2 = new Pokedex("Charizard","Dragons Breath","170","200");
+    //method show
+    Pokedex1.show();
+    Pokedex2.show();
   }
 
 }
